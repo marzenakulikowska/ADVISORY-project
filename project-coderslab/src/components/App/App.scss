@@ -1,0 +1,136 @@
+@import '../../index.scss';
+@import '../MainPage/mainpage.scss';
+@import '../AboutUs/aboutus.scss';
+@import '../Contact/contact.scss';
+@import '../Products/products.scss';
+@import '../Services/services.scss';
+@import '../Transport/transport.scss';
+@import '../Cleaning/cleaning.scss';
+@import '../Accountancy/accountancy.scss';
+@import '../Certificates/certificates.scss';
+
+.whole-page {
+  //width: 75vw;
+  margin: 0 auto;
+}
+.header-container {
+  height: 10rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background-color: white;
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  li{
+    list-style: none;
+  }
+  .header-sections {
+    width:70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.header-sections>li {
+  display: inline-block;
+  position: relative;
+}
+
+.header-sections>li>ul {
+  display: none;
+  position: absolute;
+  width: 300px;
+}
+
+
+.header-container li{
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  &:hover {
+      background-color: rgb(244,244,244);
+      transition: 0.5s;
+  }
+}
+footer {
+  height: 25rem;
+  box-shadow: 0px 30px 40px 10px rgba(0,0,0,1);
+  background-color:$light-grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.footer-contact-details {
+  border-left: 0.15rem solid $light-black;
+  .footer-contact-text {
+    margin: 1rem 1.9rem;
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $buttons-color;
+      padding-bottom: 0.2rem;
+      border-bottom: 0.15rem solid $buttons-color; 
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+}
+.footer-contact-icons { 
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  &:first-of-type {
+    margin-top:1.5rem;
+  }
+  p {
+    padding-left: 0.9rem;
+  }
+}
+.footer-adress-details {
+  h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: normal;
+    &:nth-of-type(2) {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+  
+}
+.services-list li{
+  width: 20rem;
+  margin-left: -0.5rem;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0,0,0, .1);
+  border-radius: 0.2rem;
+}
+.services-list li:first-of-type {
+  margin-top: 1rem;
+}

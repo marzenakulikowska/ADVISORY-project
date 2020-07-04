@@ -1,0 +1,72 @@
+.mainpage-container {    
+    .main-photo {
+        background-image: url(../../images/pumpkin.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title-banner {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25rem;
+            width: 60rem;
+            div {
+                color: white;
+                border: 1px solid white;
+                width: 80%;
+                text-align: center;
+                padding: 2.5rem;
+                font-size: 3.5rem;
+                font-family: 'Kaushan Script', cursive;
+                font-weight: lighter;
+                letter-spacing: 1px;
+            }
+    }
+}
+}
+.container-2 {
+   margin: 0 auto;
+   width: 75vw;
+   height: 30rem;
+}
+.content-container {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        max-width: 340px;
+        
+        p {
+            font-size: 1.6rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+.container-3 {
+    margin: 0 auto;
+    width: 75vw;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    .main-page-photo {
+        width: 54rem;
+        height: 36rem;
+    }
+    p {
+        font-size: 1.6rem;
+        text-align: justify;
+        margin-left: 5rem;
+    }
+}
