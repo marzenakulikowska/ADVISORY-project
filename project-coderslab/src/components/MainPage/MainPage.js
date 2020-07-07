@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MainPage = () => {
+    window.scrollTo(0, 0);
     return (
         <>
             <div className="mainpage-container">
@@ -10,6 +11,7 @@ const MainPage = () => {
                 </div>
             </div>
             </div>
+            <div className="container-2-background">
             <div className="container-2">
             <div className="content-container">
                 <div>
@@ -29,9 +31,18 @@ const MainPage = () => {
                 </div>
             </div>
             </div>
+            </div>
             <div className="container-3">
-                <img src="images/pumpkin-seeds.jpg" className="main-page-photo"></img>
-                <p>Ciągły rozwój i poszerzanie oferty produktów zapewniło nam już ugruntowaną pozycję na rynku ziaren i dodatków dla piekarnictwa. Najważniejsze produkty z oferty asortymentowej to m.in. mak niebieski, mak biały, siemie lniane brązowe oraz złociste, słonecznik, pestka dyni, sezam. Od 2011 roku w ofercie pojawiły się również orzechy i suszone owoce. Konkurencyjność oferty zapewnia bezpośredni import surowców. Inwestując w innowacyjną linię technologiczną do oczyszczania, sortowania i pakowania ziaren uzyskaliśmy gwarancję jakości produktów i możliwość oferowania ich w atrakcyjnych cenach. Towary dostarczamy własnym, nowoczesnym taborem transportowym. Główną bazę naszych Klientów stanowią firmy działające w przemyśle piekarniczym, cukierniczym oraz konfekcyjnym. Dywersyfikacja oferty pozwoliła jednak w ostatnich latach na pozyskanie odbiorców z branży olejarskiej, medycznej oraz farmaceutycznej. Oferowane przez nas produkty trafiają na rynki Polski, Europy zachodniej i środkowo-wschodniej oraz Rosji.</p>
+                <img src="images/pumpkin-seeds.jpg" alt="Pestki dyni"className="main-page-photo"></img>
+                <div>
+                    <p>Ciągły rozwój i poszerzanie oferty produktów zapewniło nam już ugruntowaną pozycję na rynku ziaren i dodatków dla piekarnictwa. </p>
+                    <br></br>
+                    <p>Najważniejsze produkty z oferty asortymentowej to m.in. mak niebieski, mak biały, siemie lniane brązowe oraz złociste, słonecznik, pestka dyni, sezam. </p>
+                    <br></br>
+                    <p>Od 2011 roku w ofercie pojawiły się również orzechy i suszone owoce. Konkurencyjność oferty zapewnia bezpośredni import surowców. Inwestując w innowacyjną linię technologiczną do oczyszczania, sortowania i pakowania ziaren uzyskaliśmy gwarancję jakości produktów i możliwość oferowania ich w atrakcyjnych cenach. </p>
+                    <br></br>
+                    <p>Towary dostarczamy własnym, nowoczesnym taborem transportowym. Główną bazę naszych Klientów stanowią firmy działające w przemyśle piekarniczym, cukierniczym oraz konfekcyjnym. Dywersyfikacja oferty pozwoliła jednak w ostatnich latach na pozyskanie odbiorców z branży olejarskiej, medycznej oraz farmaceutycznej. Oferowane przez nas produkty trafiają na rynki Polski, Europy zachodniej i środkowo-wschodniej oraz Rosji.</p>
+                </div>
             </div>
         </>
     )

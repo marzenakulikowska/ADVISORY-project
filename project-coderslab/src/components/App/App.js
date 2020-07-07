@@ -1,7 +1,6 @@
-import React, {useState, Component} from 'react';
-import ReactDOM from "react-dom";
+import React, {useState} from 'react';
 import './App.scss';
-import {  HashRouter as Router ,  Route,  Link,  Switch,  NavLink} from 'react-router-dom'; 
+import {  HashRouter as Router ,  Route, NavLink} from 'react-router-dom'; 
 import AboutUs from "../AboutUs/AboutUs.js";
 import Products from "../Products/Products.js";
 import Contact from "../Contact/Contact.js";
@@ -12,6 +11,7 @@ import Accountancy from "../Accountancy/Accountancy.js";
 import Cleaning from "../Cleaning/Cleaning.js";
 import Certificates from "../Certificates/Certificates.js";
 import products from "../../../src/database/db.json";
+
 
 const icon ={
   fontSize: "2rem",
@@ -43,11 +43,11 @@ const Navigation = () => {
       <div className="header-sections">
               <li><NavLink exact activeStyle={activeStyle} to="/">Strona główna</NavLink></li>
               <li><NavLink activeStyle={activeStyle} to="/produkty">Produkty</NavLink></li> 
-              <li className="toto"onMouseEnter={handleOver} onMouseLeave={handleLeave}><NavLink  activeStyle={activeStyle} to="/uslugi">Usługi</NavLink><i className="fa fa-caret-down" style={icon}></i>
+              <li className="toto" onMouseEnter={handleOver} onMouseLeave={handleLeave}><NavLink  activeStyle={activeStyle} to="/uslugi">Usługi</NavLink><i className="fa fa-caret-down" style={icon}></i>
                   <ul className="services-list" style={liststyle}>
-                    <li><NavLink to="/transport">Transport</NavLink></li>
-                    <li><NavLink to="/ksiegowosc">Księgowość</NavLink></li>
-                    <li><NavLink to="/czyszczenie">Czyszczenie ziaren</NavLink></li>
+                    <li><NavLink to="/uslugi/transport">Transport</NavLink></li>
+                    <li><NavLink to="/uslugi/ksiegowosc">Księgowość</NavLink></li>
+                    <li><NavLink to="/uslugi/czyszczenie">Czyszczenie ziaren</NavLink></li>
                   </ul>
               </li> 
               <li><NavLink activeStyle={activeStyle} to="/onas">O nas</NavLink></li>
@@ -83,6 +83,9 @@ const Footer = () => {
             <div className="footer-contact-text">
               <h1>Skontaktuj się z nami</h1>
               <NavLink to="/kontakt">Formularz kontaktowy</NavLink>
+              <br></br>
+              <br></br>
+              <NavLink to="/onas">Kontakt z przedstawicielami</NavLink>
               <div className="footer-contact-icons">
                     <i className="fa fa-phone fa-2x" aria-hidden="true"></i>
                     <p>+48 606 424 027</p>
@@ -102,17 +105,18 @@ const App = () => {
   return (
       <>
       <Router>
-      <Header/>
+        
+          <Header/>
           <Route exact path="/" component={MainPage}/>
-          <Route path="/produkty" component={()=><Products products={products} onSelect={setSelected} />}/>
-          <Route path="/uslugi" component={Services}/>
-          <Route path="/transport" component={Transport}/>
-          <Route path="/ksiegowosc" component={Accountancy}/>
-          <Route path="/czyszczenie" component={Cleaning}/>
+          <Route path="/produkty" component={()=><Products products={products} selected={selected} onSelect={setSelected} />}/>
+          <Route exact path="/uslugi" component={Services}/>
+          <Route path="/uslugi/transport" component={Transport}/>
+          <Route path="/uslugi/ksiegowosc" component={Accountancy}/>
+          <Route path="/uslugi/czyszczenie" component={Cleaning}/>
           <Route path="/certyfikaty" component={Certificates}/>
           <Route path="/onas" component={AboutUs}/>
           <Route path="/kontakt" component={()=><Contact selectedProd={selected}/>}/>
-      <Footer/>
+          <Footer/>
       </Router>
       </>
   )

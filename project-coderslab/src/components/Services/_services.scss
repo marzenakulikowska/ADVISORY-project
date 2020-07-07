@@ -1,9 +1,41 @@
 .services-container {
-    height: 80rem;
+    height: 33rem;
+    margin: 0 auto;
+    width: 75vw;
 }
-//     background-size: cover;
-//     background-position: top;
-//     background-attachment: fixed;
+.main-services-page-title h1 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.content-container-2 {
+    margin: 7rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: $light-black;
+        transition: 0.75s;
+        &:hover {
+            
+            transform: scale(1.2);
+            color:#e3000f;
+        }
+        div {
+            width:20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }  
+    }  
+}
+.content-container-2 div > h1 {
+    margin-top: 2.5rem;
+}
+//    
 //     display: flex;
 //     flex-direction: column;
 //     align-items: center;

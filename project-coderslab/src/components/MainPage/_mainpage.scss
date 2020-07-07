@@ -35,10 +35,15 @@
    width: 75vw;
    height: 30rem;
 }
+.container-2-background {
+    background-color: $light-grey;
+    height: 34rem;
+}
 .content-container {
-    margin: 5rem auto;
     display: flex;
     justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     div {
         display: flex;
         flex-direction: column;
@@ -49,13 +54,14 @@
         p {
             font-size: 1.6rem;
             margin-top: 1.5rem;
+            
         }
     }
 }
 .container-3 {
     margin: 0 auto;
     width: 75vw;
-    height: 40rem;
+    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +72,6 @@
     }
     p {
         font-size: 1.6rem;
-        text-align: justify;
         margin-left: 5rem;
     }
 }

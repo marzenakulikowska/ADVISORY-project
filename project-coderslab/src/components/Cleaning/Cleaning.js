@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Cleaning = () => {
+    window.scrollTo(0, 0);
     return (
     <div className="cleaning-container">
         <div className="main-photo">

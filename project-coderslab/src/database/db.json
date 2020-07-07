@@ -46,61 +46,71 @@
         "id": 7,
         "name": "Nasiona chia",
         "img": "images/chia.jpg",
-        "category": "Ziarna"
+        "category": "Ziarna",
+        "selected": false
       },
       {
         "id": 8,
         "name": "Pestka dyni",
         "img": "images/dynia.jpg",
-        "category": "Ziarna"
+        "category": "Ziarna",
+        "selected": false
       },
       {
         "id": 9,
         "name": "Orzechy nerkowca",
         "img": "images/nerkowca.jpg",
-        "category": "Orzechy"
+        "category": "Orzechy",
+        "selected": false
       },
       {
         "id": 10,
         "name": "Orzechy włoskie",
         "img": "images/wloskie.jpg",
-        "category": "Orzechy"
+        "category": "Orzechy",
+        "selected": false
       },
       {
         "id": 11,
         "name": "Orzechy laskowe",
         "img": "images/laskowe.jpg",
-        "category": "Orzechy"
+        "category": "Orzechy",
+        "selected": false
       },
       {
         "id": 12,
         "name": "Migdały całe",
         "img": "images/migdal.jpg",
-        "category": "Migdały"
+        "category": "Migdały",
+        "selected": false
       },
       {
         "id": 13,
         "name": "Migdały blanszowane",
         "img": "images/migdal_blanszowany.jpg",
-        "category": "Migdały"
+        "category": "Migdały",
+        "selected": false
       },
       {
         "id": 14,
         "name": "Rodzynki",
         "img": "images/rodzynki.jpg",
-        "category": "Owoce suszone"
+        "category": "Owoce suszone",
+        "selected": false
       },
       {
         "id": 15,
         "name": "Morele",
         "img": "images/morela.jpg",
-        "category": "Owoce suszone"
+        "category": "Owoce suszone",
+        "selected": false
       },
       {
         "id": 16,
         "name": "Żurawina",
         "img": "images/zurawina.jpg",
-        "category": "Owoce suszone"
+        "category": "Owoce suszone",
+        "selected": false
       }
     ]
   }

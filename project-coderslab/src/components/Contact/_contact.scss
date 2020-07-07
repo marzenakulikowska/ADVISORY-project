@@ -1,5 +1,4 @@
 .contact-container {
-    height: 180rem;
     background-image: url("../../images/sunset.jpg");
     background-size: cover;
     background-position: top;
@@ -15,6 +14,7 @@
     }
 }
 .contact-details {
+    margin-top: 4rem;
     height: 20rem;
     width:60rem;
     background-color: white;
@@ -60,7 +60,7 @@
         padding-top: 5px;
         div{
             padding:1.5rem;
-            input, textarea {
+            .normal-input, .normal-textarea {
                 font-family: $main-font-family;
                 padding: 1rem;
                 border: 1px solid #ddd;
@@ -88,6 +88,7 @@
         }
     }
 }
+
 .adress-details {
     width:60rem;
     background-color: white;
@@ -97,6 +98,7 @@
     align-items: center;
     border-radius: 1rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 4rem;
     h1 {
         padding-top:3rem;
     }

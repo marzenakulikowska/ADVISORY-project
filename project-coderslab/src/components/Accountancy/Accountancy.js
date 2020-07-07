@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Accountancy = () => {
+    window.scrollTo(0, 0);
     return (
     <div className="accontancy-container">
         <div className="main-photo">

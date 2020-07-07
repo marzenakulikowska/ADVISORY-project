@@ -1,24 +1,17 @@
-import React, {useState} from 'react';
-
+import React from 'react';
 
 const Products = (props) => {
-    const [tempTask, setTempTask] = useState([])
     const {products}=props.products;
     const handleClick = (el) => {
-        if(tempTask.indexOf(el)==-1){
-            setTempTask(prevState => {
-                return [...prevState, el]
-            })
+        if(props.selected.indexOf(el)===-1){ //jeśli tego kliknietego elementu jeszcze nie ma 
             props.onSelect(prevState => {
                 el.selected=true
                 return[...prevState, el]
             })
-            console.log(el)
+            
         }
-        console.log("klikniety")
-        console.log(tempTask)
     }
-    console.log(tempTask)
+    window.scrollTo(0, 0);
     return (
         <>
           <div className="products-container">
@@ -31,7 +24,7 @@ const Products = (props) => {
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Ziarna"){
+                        if(el.category==="Ziarna"){
                             if(i<=2) {
                                 return (
                                     <div key={i} className="product-style">
@@ -41,12 +34,12 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        } return null;
                     })}
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Ziarna"){
+                        if(el.category==="Ziarna"){
                             if(i<=5 && i>2) {
                                 return (
                                     <div key={i} className="product-style">
@@ -56,12 +49,12 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        }return null;
                     })}
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Ziarna"){
+                        if(el.category==="Ziarna"){
                             if(i<=7 && i>5) {
                                 return (
                                     <div key={i} className="product-style">
@@ -71,7 +64,7 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        }return null;
                     })}
                 </div>
                 <div className="main-products-type-title">
@@ -79,7 +72,7 @@ const Products = (props) => {
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Orzechy"){
+                        if(el.category==="Orzechy"){
                             if(i<=10) {
                                 return (
                                     <div key={i} className="product-style">
@@ -89,7 +82,7 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        }return null;
                     })}
                 </div>
                 <div className="main-products-type-title">
@@ -97,7 +90,7 @@ const Products = (props) => {
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Migdały"){
+                        if(el.category==="Migdały"){
                             if(i<=12) {
                                 return (
                                     <div key={i} className="product-style">
@@ -107,7 +100,7 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        }return null;
                     })}
                 </div>
                 <div className="main-products-type-title">
@@ -115,7 +108,7 @@ const Products = (props) => {
                 </div>
                 <div className="products-content">
                     {products.length>0 && products.map((el,i)=>{
-                        if(el.category=="Owoce suszone"){
+                        if(el.category==="Owoce suszone"){
                             if(i<=15) {
                                 return (
                                     <div key={i} className="product-style">
@@ -125,7 +118,7 @@ const Products = (props) => {
                                     </div>
                                 )
                             }
-                        }
+                        }return null;
                     })}
                 </div>
             </div>          

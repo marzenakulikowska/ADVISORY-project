@@ -3,6 +3,7 @@
     .main-photo {
         background-image: url(../../images/ksiegowosc.jpg);
         background-position:center;
+        background-attachment: fixed;
         background-size: cover;
         height: 50rem;
         display: flex;
