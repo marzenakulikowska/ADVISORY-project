@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/ADVISORY-project/static/css/main.d604d066.chunk.css",
-    "main.js": "/ADVISORY-project/static/js/main.c5ff81d8.chunk.js",
-    "main.js.map": "/ADVISORY-project/static/js/main.c5ff81d8.chunk.js.map",
+    "main.js": "/ADVISORY-project/static/js/main.07ba6799.chunk.js",
+    "main.js.map": "/ADVISORY-project/static/js/main.07ba6799.chunk.js.map",
     "runtime-main.js": "/ADVISORY-project/static/js/runtime-main.756627c7.js",
     "runtime-main.js.map": "/ADVISORY-project/static/js/runtime-main.756627c7.js.map",
-    "static/js/2.ab967b5c.chunk.js": "/ADVISORY-project/static/js/2.ab967b5c.chunk.js",
-    "static/js/2.ab967b5c.chunk.js.map": "/ADVISORY-project/static/js/2.ab967b5c.chunk.js.map",
+    "static/js/2.3569131c.chunk.js": "/ADVISORY-project/static/js/2.3569131c.chunk.js",
+    "static/js/2.3569131c.chunk.js.map": "/ADVISORY-project/static/js/2.3569131c.chunk.js.map",
     "index.html": "/ADVISORY-project/index.html",
-    "precache-manifest.9a17ef81ebac30174137b287235ffedb.js": "/ADVISORY-project/precache-manifest.9a17ef81ebac30174137b287235ffedb.js",
+    "precache-manifest.fa802b74645c072c0f3f586f8385f332.js": "/ADVISORY-project/precache-manifest.fa802b74645c072c0f3f586f8385f332.js",
     "service-worker.js": "/ADVISORY-project/service-worker.js",
     "static/css/main.d604d066.chunk.css.map": "/ADVISORY-project/static/css/main.d604d066.chunk.css.map",
-    "static/js/2.ab967b5c.chunk.js.LICENSE.txt": "/ADVISORY-project/static/js/2.ab967b5c.chunk.js.LICENSE.txt",
+    "static/js/2.3569131c.chunk.js.LICENSE.txt": "/ADVISORY-project/static/js/2.3569131c.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/ADVISORY-project/static/media/transport.6a3f4fce.JPG",
     "static/media/product.png": "/ADVISORY-project/static/media/product.9b36e334.png",
-    "static/media/pumpkin-seeds.jpg": "/ADVISORY-project/static/media/pumpkin-seeds.1c198185.jpg"
+    "static/media/pumpkin-seeds.jpg": "/ADVISORY-project/static/media/pumpkin-seeds.1c198185.jpg",
+    "static/media/transport2.jpg": "/ADVISORY-project/static/media/transport2.dcb67ea9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.756627c7.js",
-    "static/js/2.ab967b5c.chunk.js",
+    "static/js/2.3569131c.chunk.js",
     "static/css/main.d604d066.chunk.css",
-    "static/js/main.c5ff81d8.chunk.js"
+    "static/js/main.07ba6799.chunk.js"
   ]
 }
