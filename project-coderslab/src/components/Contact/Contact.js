@@ -120,7 +120,7 @@ const Contact = (props) => {
                 <p>ul. Słowackiego 33A</p>
                 <p>58-371 Boguszów Gorce</p>
                 <p>POLAND</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10093.807645109904!2d16.1615848822706!3d50.76719579059259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e57d54560e55f%3A0x853ffd7666ab0cad!2sJuliusza%20S%C5%82owackiego%2033a%2C%2058-371%20Bogusz%C3%B3w-Gorce!5e0!3m2!1spl!2spl!4v1593858624140!5m2!1spl!2spl" title="contact-map" style={mapStyles}></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d88646.18348152368!2d16.111820461017025!3d50.79405794485739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e57d54937c625%3A0x795e8508cd7732be!2sAdvisory%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1595593354166!5m2!1spl!2spl" title="contact-map" style={mapStyles}></iframe>
             </div>
         </div>
         </>

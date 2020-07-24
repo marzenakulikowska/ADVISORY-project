@@ -1,5 +1,5 @@
 .products-container{
-    height: 365rem;
+    //height: 365rem;
     margin: 0 auto;
     width: 73vw;
 }
@@ -24,8 +24,11 @@
     justify-content: space-evenly;
 }
 .product-style img {
-    width: 36rem;
-    height: 36rem;
+    // width:36rem;
+    // height: 36rem;
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem 0;
 }
 .product-style h2{
     margin-bottom: 1rem;

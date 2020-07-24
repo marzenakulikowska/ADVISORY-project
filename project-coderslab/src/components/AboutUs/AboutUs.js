@@ -1,5 +1,5 @@
 import React from 'react';
-
+import person from '../../assets/person.png';
 const AboutUs = () => {
     window.scrollTo(0, 0);
     return (
@@ -13,30 +13,30 @@ const AboutUs = () => {
                     <h1>Nasz zespół</h1>
                     <div className="our-staff-photos">
                         <div>
-                             <img src="images/michal2.jpg" alt="Michał Kulikowski"></img>
+                             <img src={person} alt="Michał Kulikowski"></img>
                              <h1>Michał Kulikowski</h1>
                              <p>Prezes zarządu</p>
                              <p>Specjalista ds. sprzedaży</p>
                              <b>tel: +48 606 424 027</b>
                         </div>
                         <div>
-                             <img src="images/waldemar.jpg" alt="Waldemar Kulikowski"></img>
+                             <img src={person} alt="Waldemar Kulikowski"></img>
                              <h1>Waldemar Kulikowski</h1>
                              <p>Vice Przezes Zarządu</p>
                              <p>Specjalista ds. logistyki</p>
                              <b>tel: +48 601 844 872</b>
                         </div>
                        <div>
-                            <img src="images/ewa.jpg" alt="Ewa Kulikowska"></img>
+                            <img src={person} alt="Ewa Kulikowska"></img>
                             <h1>Ewa <br></br>Kulikowska</h1>
                             <p>Główna księgowa</p>
                             <p>Doradca podatkowy</p>
                             <b>tel: +48 600 899 960</b>
                         </div>
                         <div>
-                            <img src="images/marzena.jpg" alt="Marzena Kulikowska"></img>
+                            <img src={person} alt="Marzena Kulikowska"></img>
                             <h1>Marzena Kulikowska</h1>
-                            <p>Junior Sales Manager</p>
+                            <p>Asystentka Prezesa</p>
                             <p>Asystentka ds. sprzedaży</p>
                             <b>tel: +48 666 315 684</b>
                         </div>

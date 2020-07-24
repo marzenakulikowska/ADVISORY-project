@@ -28,7 +28,7 @@ const Transport = () => {
             </div>
             <div style={{backgroundColor:"#f4f4f4"}}>
                 <div className="transport-content-container">
-                        <img src="images/transport2.jpg" alt="transport-pic2" ></img>
+                        <img src="assets/transport2.jpg" alt="transport-pic2" ></img>
                         <div>
                             <h1>Transport</h1>
                             <p>ADVISORY Sp. z o.o. świadczy również usługi transportowo-spedycyjne w ruchu krajowym i międzynarodowym. Nasze doświadczenie jest poparte wieloletnią praktyką, która przekłada się na rzetelność i pełen profesjonalizm.</p>
