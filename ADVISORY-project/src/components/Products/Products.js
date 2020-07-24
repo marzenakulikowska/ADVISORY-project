@@ -1,5 +1,5 @@
 import React from 'react';
-
+import productImg from '../../assets/product.png';
 const Products = (props) => {
     const {products}=props.products;
     const handleClick = (el) => {
@@ -29,7 +29,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button  className="product-button" onClick={()=>handleClick(el)}>Wybierz</button>
                                     </div>
                                 )
@@ -44,7 +44,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button  className="product-button" onClick={()=>handleClick(el)} >Wybierz</button>
                                     </div>
                                 )
@@ -59,7 +59,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button className="product-button" onClick={()=>handleClick(el)}>Wybierz</button>
                                     </div>
                                 )
@@ -77,7 +77,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button  className="product-button" onClick={()=>handleClick(el)}>Wybierz</button>
                                     </div>
                                 )
@@ -95,7 +95,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button  className="product-button" onClick={()=>handleClick(el)}>Wybierz</button>
                                     </div>
                                 )
@@ -113,7 +113,7 @@ const Products = (props) => {
                                 return (
                                     <div key={i} className="product-style">
                                         <h2>{el.name}</h2>
-                                        <img src={el.img} alt={el.name}></img>
+                                        <img src={productImg} alt={el.name}></img>
                                         <button  className="product-button" onClick={()=>handleClick(el)}>Wybierz</button>
                                     </div>
                                 )

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import pumpkin from '../../assets/pumpkin-seeds.jpg'
 const MainPage = () => {
     window.scrollTo(0, 0);
     return (
@@ -33,7 +33,7 @@ const MainPage = () => {
             </div>
             </div>
             <div className="container-3">
-                <img src="images/pumpkin-seeds.jpg" alt="Pestki dyni"className="main-page-photo"></img>
+                <img src={pumpkin} alt="Pestki dyni"className="main-page-photo"></img>
                 <div>
                     <p>Ciągły rozwój i poszerzanie oferty produktów zapewniło nam już ugruntowaną pozycję na rynku ziaren i dodatków dla piekarnictwa. </p>
                     <br></br>

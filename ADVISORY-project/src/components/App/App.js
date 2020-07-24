@@ -11,7 +11,7 @@ import Accountancy from "../Accountancy/Accountancy.js";
 import Cleaning from "../Cleaning/Cleaning.js";
 import Certificates from "../Certificates/Certificates.js";
 import products from "../../../src/database/db.json";
-
+import logo from '../../assets/logo.png'
 
 const icon ={
   fontSize: "2rem",
@@ -38,7 +38,7 @@ const Navigation = () => {
   return (
       <>
       <div>
-        <NavLink to="/"><img src="images/logo.png" title="logo" alt="logo"></img></NavLink>
+        <NavLink to="/"><img src={logo} title="logo" alt="logo"></img></NavLink>
       </div>
       <div className="header-sections">
               <li><NavLink exact activeStyle={activeStyle} to="/">Strona główna</NavLink></li>
@@ -69,7 +69,7 @@ const Footer = () => {
     <>
       <footer>
           <div>
-            <NavLink to="/"><img src="images/logo.png" title="logo" alt="logo"></img></NavLink>
+            <NavLink to="/"><img src={logo} title="logo" alt="logo"></img></NavLink>
           </div>
           <div className="footer-adress-details">
             <h1>ADVISORY Sp. z o.o.</h1>

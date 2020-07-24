@@ -3,112 +3,96 @@
       {
         "id": 1,
         "name": "Mak niebieski",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 2,
         "name": "Mak biały",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 3,
         "name": "Słonecznik",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 4,
         "name": "Sezam",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 5,
         "name": "Siemię lniane złociste",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 6,
         "name": "Siemię lniane brązowe",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 7,
         "name": "Nasiona chia",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 8,
         "name": "Pestka dyni",
-        "img": "images/product.png",
         "category": "Ziarna",
         "selected": false
       },
       {
         "id": 9,
         "name": "Orzechy nerkowca",
-        "img": "images/product.png",
         "category": "Orzechy",
         "selected": false
       },
       {
         "id": 10,
         "name": "Orzechy włoskie",
-        "img": "images/product.png",
         "category": "Orzechy",
         "selected": false
       },
       {
         "id": 11,
         "name": "Orzechy laskowe",
-        "img": "images/product.png",
         "category": "Orzechy",
         "selected": false
       },
       {
         "id": 12,
         "name": "Migdały całe",
-        "img": "images/product.png",
         "category": "Migdały",
         "selected": false
       },
       {
         "id": 13,
         "name": "Migdały blanszowane",
-        "img": "images/product.png",
         "category": "Migdały",
         "selected": false
       },
       {
         "id": 14,
         "name": "Rodzynki",
-        "img": "images/product.png",
         "category": "Owoce suszone",
         "selected": false
       },
       {
         "id": 15,
         "name": "Morele",
-        "img": "images/product.png",
         "category": "Owoce suszone",
         "selected": false
       },
       {
         "id": 16,
         "name": "Żurawina",
-        "img": "images/product.png",
         "category": "Owoce suszone",
         "selected": false
       }

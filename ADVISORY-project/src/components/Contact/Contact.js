@@ -30,35 +30,54 @@ const ContactForm = (props) => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [messageTitle, setMessageTitle] = useState("");
-    const [errors, setErrors] = useState([]);
-    
- 
+    const [errorName, setErrorName] = useState("");
+    const [errorSurname, setErrorSurname] = useState("");
+    const [errorEmail, setErrorEmail] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
+    const [sendMsg, setSendMsg] = useState("none");
+    const [deleteChosen, setDeleteChosen] = useState("block");
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        if (name.length <= 0) {
-          setErrors((prevState) => [...prevState, "Imię jest wymagane"]);
-        } else if (email.indexOf("@") <1) {
-            setErrors((prevState) => [...prevState, "Email musi zawierać znak @"]);
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        e.preventDefault(); 
+        if(name.length === 0 || name.indexOf(" ")!==-1) {
+          setErrorName("Imię jest wymagane i musi być 1 wyrazem")
         }
-    }
-    
+        else if (surname.length === 0) {
+            setErrorSurname("Nazwisko jest wymagane")
+        }
+        else if(!re.test(email)) {
+          setErrorEmail("E-mail jest nieprawidłowy")
+        }
+        else if (message.length < 50) {
+            setErrorMessage("Wiadomość musi mieć minimum 50 znaków")
+        }
+        else {
+            setErrorName("");
+            setErrorMessage("");
+            setErrorEmail("");
+            setName("");
+            setEmail("");
+            setMessage("");
+            setDeleteChosen("none")
+            setSendMsg("block");
+            setTimeout(() => setSendMsg("none"),3000);
+            }
+          
+        }
     return (
 
         <form onSubmit ={handleSubmit}>
-             <ul>
-                {errors.map((error, i) => (
-                <li key={i}>{error}</li>
-                ))}
-            </ul>
             <h1>Formularz zapytań ofertowych</h1>
             <div>
                 <label htmlFor="name">Imię</label>
-                <input className="normal-input" id="name" type="text" value={name} placeholder={"Imię"} required onChange={(e) => setName(e.target.value)}></input>
+                <input className="normal-input" id="name" type="text" value={name} placeholder={"Imię"} onChange={(e) => setName(e.target.value)}></input>
+                <p className="error">{errorName}</p>
             </div>
             <div>
                 <label htmlFor="surname">Nazwisko</label>
-                <input className="normal-input" id="surname" type="text" value={surname} placeholder={"Nazwisko"} required onChange={(e) => setSurname(e.target.value)}></input>
+                <input className="normal-input" id="surname" type="text" value={surname} placeholder={"Nazwisko"} onChange={(e) => setSurname(e.target.value)}></input>
+                <p className="error">{errorSurname}</p>
             </div>
             <div>
                 <label htmlFor="company">Nazwa firmy</label>
@@ -66,7 +85,8 @@ const ContactForm = (props) => {
             </div>
             <div>
                 <label htmlFor="email">E-mail</label>
-                <input className="normal-input" id="email" type="email" value={email}  placeholder={"twoj@email.pl"} required onChange={(e) => setEmail(e.target.value)}></input>
+                <input className="normal-input" id="email" value={email} placeholder={"twoj@email.pl"} onChange={(e) => setEmail(e.target.value)}></input>
+                <p className="error">{errorEmail}</p>
             </div>
             <div>
                 <label htmlFor="message-title">Temat wiadomości</label>
@@ -75,12 +95,14 @@ const ContactForm = (props) => {
             <div>
                 <label htmlFor="message">Treść wiadomości</label>
                 <textarea className="normal-textarea" id="message"  value={message} placeholder={"Tu wpisz treść wiadomości"} onChange={(e) => setMessage(e.target.value)}></textarea>
+                <p className="error">{errorMessage}</p>
             </div>
             <div className="chosen-products">
                 <label htmlFor="message-title" >Wybrane produkty</label>
-                <Chosen items={props.items}/>
+                <div style ={{display:deleteChosen}}><Chosen  items={props.items}/></div> 
             </div>
-            <button className="btn btn-primary" type="submit">Wyślij</button>
+            <div className="success" style={{display:sendMsg,fontSize:"15px" }}>Formularz został wysłany poprawnie!<p></p>Wkrótce się skontaktujemy</div>
+            <button className="btn btn-primary" type="submit">Wyślij</button> 
         </form>
     )
 }
