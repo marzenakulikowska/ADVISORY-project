@@ -1,0 +1,80 @@
+.aboutus-container {
+    height: 160rem;       
+    .main-photo {
+        background-image: url(../../assets/firma.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title-banner {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25rem;
+            width: 60rem;
+            div {
+                color: white;
+                border: 1px solid white;
+                width: 80%;
+                text-align: center;
+                padding: 2.5rem;
+                font-size: 3.5rem;
+                font-family: 'Kaushan Script', cursive;
+                font-weight: lighter;
+                letter-spacing: 1px;
+            }
+    }
+}
+}
+.aboutus-content {
+    margin: 0 auto;
+    width: 75vw;
+}
+.aboutus-content  h1 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: normal;
+}
+.our-staff-photos {
+    margin: 7rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.our-staff-photos div {
+    width:200px;
+    text-align: center;
+    h1{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    p , b{
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem;
+    }
+}
+.our-staff-photos div > img {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+}
+.aboutus-content .about-us-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-weight: normal;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+}
