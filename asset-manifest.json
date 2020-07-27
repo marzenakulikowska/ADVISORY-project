@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ADVISORY-project/static/css/main.d604d066.chunk.css",
-    "main.js": "/ADVISORY-project/static/js/main.07ba6799.chunk.js",
-    "main.js.map": "/ADVISORY-project/static/js/main.07ba6799.chunk.js.map",
+    "main.js": "/ADVISORY-project/static/js/main.58e2aa11.chunk.js",
+    "main.js.map": "/ADVISORY-project/static/js/main.58e2aa11.chunk.js.map",
     "runtime-main.js": "/ADVISORY-project/static/js/runtime-main.756627c7.js",
     "runtime-main.js.map": "/ADVISORY-project/static/js/runtime-main.756627c7.js.map",
     "static/js/2.3569131c.chunk.js": "/ADVISORY-project/static/js/2.3569131c.chunk.js",
     "static/js/2.3569131c.chunk.js.map": "/ADVISORY-project/static/js/2.3569131c.chunk.js.map",
     "index.html": "/ADVISORY-project/index.html",
-    "precache-manifest.de5e4bff0fd7668e0271933aa59dcbbb.js": "/ADVISORY-project/precache-manifest.de5e4bff0fd7668e0271933aa59dcbbb.js",
+    "precache-manifest.4cc8edc70e145da886865dc26eac0d64.js": "/ADVISORY-project/precache-manifest.4cc8edc70e145da886865dc26eac0d64.js",
     "service-worker.js": "/ADVISORY-project/service-worker.js",
     "static/css/main.d604d066.chunk.css.map": "/ADVISORY-project/static/css/main.d604d066.chunk.css.map",
     "static/js/2.3569131c.chunk.js.LICENSE.txt": "/ADVISORY-project/static/js/2.3569131c.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.756627c7.js",
     "static/js/2.3569131c.chunk.js",
     "static/css/main.d604d066.chunk.css",
-    "static/js/main.07ba6799.chunk.js"
+    "static/js/main.58e2aa11.chunk.js"
   ]
 }
