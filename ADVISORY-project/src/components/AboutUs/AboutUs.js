@@ -14,31 +14,31 @@ const AboutUs = () => {
                     <div className="our-staff-photos">
                         <div>
                              <img src={person} alt="Michał Kulikowski"></img>
-                             <h1>Michał Kulikowski</h1>
+                             <h1>Imię nazwisko</h1>
                              <p>Prezes zarządu</p>
                              <p>Specjalista ds. sprzedaży</p>
-                             <b>tel: +48 606 424 027</b>
+                             <b>tel: +48 123 456 789</b>
                         </div>
                         <div>
                              <img src={person} alt="Waldemar Kulikowski"></img>
-                             <h1>Waldemar Kulikowski</h1>
+                             <h1>Imię nazwisko</h1>
                              <p>Vice Przezes Zarządu</p>
                              <p>Specjalista ds. logistyki</p>
-                             <b>tel: +48 601 844 872</b>
+                             <b>tel: +48 123 456 789</b>
                         </div>
                        <div>
                             <img src={person} alt="Ewa Kulikowska"></img>
-                            <h1>Ewa <br></br>Kulikowska</h1>
+                            <h1>Imię nazwisko</h1>
                             <p>Główna księgowa</p>
                             <p>Doradca podatkowy</p>
-                            <b>tel: +48 600 899 960</b>
+                            <b>tel: +48 123 456 789</b>
                         </div>
                         <div>
                             <img src={person} alt="Marzena Kulikowska"></img>
-                            <h1>Marzena Kulikowska</h1>
-                            <p>Asystentka Prezesa</p>
+                            <h1>Imię nazwisko</h1>
+                            <p>Asystentka księgowej</p>
                             <p>Asystentka ds. sprzedaży</p>
-                            <b>tel: +48 666 315 684</b>
+                            <b>tel: +48 123 456 789</b>
                         </div>
                     </div>
                     <div className="about-us-movie">
